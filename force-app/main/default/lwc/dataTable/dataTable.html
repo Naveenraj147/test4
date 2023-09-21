@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Data Table">
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+            key-field="Id"
+            data={contacts}
+            show-row-number-column
+            hide-checkbox-column
+            sorted-by={sortBy}
+            sorted-direction={sortDirection}
+            onsort={handleSort}
+            onrowaction={handleAction}
+            columns={columnsList}>
+            </lightning-datatable>
+        </div>
+        
+    </lightning-card>
+    
+    
+</template>
